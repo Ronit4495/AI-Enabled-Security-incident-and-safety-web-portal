@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Cyber Crime Reporting Portal | Government of India</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Portal Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       UTILITY BAR
+       ═══════════════════════════════════════ -->
+  <div class="utility-bar">
+    <div class="container">
+      <div>
+        <span>Screen Reader Access</span>
+        <a href="#">Skip to Main Content</a>
+        <a href="#">A-</a>
+        <a href="#">A</a>
+        <a href="#">A+</a>
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <div class="lang-switcher">
+          <span class="active">English</span>
+          
+        </div>
+        <a href="#">Sitemap</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tricolor Strip -->
+  <div class="tricolor-strip"></div>
+
+  <!-- ═══════════════════════════════════════
+       ALERT TICKER
+       ═══════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">🔔 Alerts</div>
+    <div class="ticker-content">
+      <div class="ticker-inner">
+        <div class="ticker-item"><span>⚠</span>Beware of fake KYC update calls — banks never ask for OTP on phone</div>
+        <div class="ticker-item"><span>⚠</span>New advisory: WhatsApp job scams on the rise — report immediately</div>
+        <div class="ticker-item"><span>📢</span>Cyber Dost initiative: Follow @cyberdost for safety tips</div>
+        <div class="ticker-item"><span>⚠</span>Beware of fake Investment apps promising high returns</div>
+        <div class="ticker-item"><span>📢</span>I4C Helpline 1930 — Report Financial Cyber Fraud 24x7</div>
+        <!-- Duplicate for seamless infinite loop -->
+        <div class="ticker-item"><span>⚠</span>Beware of fake KYC update calls — banks never ask for OTP on phone</div>
+        <div class="ticker-item"><span>⚠</span>New advisory: WhatsApp job scams on the rise — report immediately</div>
+        <div class="ticker-item"><span>📢</span>Cyber Dost initiative: Follow @cyberdost for safety tips</div>
+        <div class="ticker-item"><span>⚠</span>Beware of fake Investment apps promising high returns</div>
+        <div class="ticker-item"><span>📢</span>I4C Helpline 1930 — Report Financial Cyber Fraud 24x7</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════ -->
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <div class="emblem">⚖️</div>
+        <div class="header-text">
+          
+          <h1>AI Enabled Cyber Reporting Portal</h1>
+          
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-track" onclick="document.querySelector('.track-section').scrollIntoView({behavior:'smooth'})">Track Complaint</button>
+        <a href="#report" class="btn-report" onclick="document.querySelector('.form-section').scrollIntoView({behavior:'smooth'}); return false;">File a Complaint</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-item active" href="#">🏠 Home</a>
+      <a class="nav-item" href="#report">📋 Report Cyber Crime</a>
+      <a class="nav-item" href="#file">🔍 Track Complaint</a>
+      <a class="nav-item" href="https://isea.gov.in/">📚 Cyber Awareness</a>
+      <a class="nav-item" href="#help">📞 Helplines</a>
+      <a class="nav-item" href="https://i4c.mha.gov.in/">🏛️ About I4C</a>
+      <a class="nav-item" href="#">📰 Media Corner</a>
+      <a class="nav-item" href="#">⚠️ Advisories</a>
+      <a class="nav-item nav-item--highlight" href="url-checker.html">🔗 URL Safety Checker</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       EMERGENCY BANNER
+       ═══════════════════════════════════════ -->
+  <div class="emergency-banner">
+    <span class="blink">🚨</span>
+    <span>Financial Cyber Fraud? Call Immediately:</span>
+    <span class="helpline-num">1930</span>
+    <span>|</span>
+    <span>Available 24×7 — Act fast to freeze fraudulent transactions</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <div class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🛡️ Protecting Digital India</div>
+      <h2>Report Cyber Crimes.<br>Protect <span>Digital India</span>.</h2>
+      <p>India's dedicated platform to report cybercrime complaints. Backed by the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs. Anonymous reporting available for sensitive crimes.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <button class="btn-report" onclick="document.querySelector('.form-section').scrollIntoView({behavior:'smooth'})">📝 File Complaint Online</button>
+        <button
+          style="background:transparent; border:2px solid rgba(255,255,255,0.3); color:white; padding:12px 24px; border-radius:4px; font-size:15px; cursor:pointer; font-family:'Rajdhani',sans-serif; font-weight:600; letter-spacing:0.5px; transition:all 0.2s;"
+          onmouseover="this.style.borderColor='#FF9933';this.style.color='#FF9933'"
+          onmouseout="this.style.borderColor='rgba(255,255,255,0.3)';this.style.color='white'"
+          onclick="document.querySelector('.track-section').scrollIntoView({behavior:'smooth'})">
+          🔍 Track Complaint Status
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">25L+</div>
+          <div class="stat-label">Complaints Received</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">18L+</div>
+          <div class="stat-label">Cases Resolved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">₹500Cr+</div>
+          <div class="stat-label">Amount Saved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">900+</div>
+          <div class="stat-label">Partner Banks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       CRIME CATEGORIES
+       ═══════════════════════════════════════ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title-group">
+        <div class="section-label">Report By Category</div>
+        <h2 class="section-title">Types of Cyber Crimes</h2>
+      </div>
+      <a href="#" class="view-all">View All Categories →</a>
+    </div>
+    <div class="crime-grid">
+      <div class="crime-card"  >
+        <a href = "https://razorpay.com/learn/what-is-financial-fraud/">
+        <div class="crime-icon" style="background:#FFF3E0;">💳</div>
+        <h3>Online Financial Fraud</h3></a>
+        <p>UPI fraud, card fraud, net banking, unauthorized transactions</p>
+        <div class="crime-count">Most Reported</div>
+        
+      </div>
+      <div class="crime-card" >
+        <a href="https://www.stopbullying.gov/cyberbullying/what-is-it">
+        <div class="crime-icon" style="background:#E3F2FD;">😔</div>
+        <h3>Cyber Bullying &amp; Harassment</h3></a>
+        <p>Online harassment, threatening messages, cyberstalking</p>
+      </div>
+      <div class="crime-card" onclick="highlightCategory(this)">
+        
+        <div class="crime-icon" style="background:#FCE4EC;">🔒</div>
+        <h3>Ransomware Attack</h3>
+        <p>Files encrypted, ransom demanded, system locked</p>
+      </div>
+      <div class="crime-card" onclick="highlightCategory(this)">
+        <div class="crime-icon" style="background:#E8F5E9;">🎣</div>
+        <h3>Phishing / Vishing</h3>
+        <p>Fake websites, fraudulent calls asking for credentials</p>
+      </div>
+      <div class="crime-card" >
+        <a href="https://youtu.be/X6XHneDIm9A?si=rXHm7e1BX0ZNHrf-">
+        <div class="crime-icon" style="background:#F3E5F5;">📸</div>
+        <h3>Online Sextortion</h3></a>
+        <p>Blackmail using intimate images or videos, deepfakes</p>
+
+      </div>
+      <div class="crime-card" onclick="highlightCategory(this)">
+        <div class="crime-icon" style="background:#E0F2F1;">💼</div>
+        <h3>Job / Loan Fraud</h3>
+        <p>Fake job offers, fraudulent loan apps, advance fee scams</p>
+      </div>
+      <div class="crime-card" >
+        <a href="https://youtu.be/zsvscgoj_4w?si=JsDzpAcy1c-EHRI8">
+        <div class="crime-icon" style="background:#FFF8E1;">🔐</div>
+        <h3>Hacking / Data Breach</h3></a>
+        <p>Unauthorized access, data theft, account takeover</p>
+      </div>
+      <div class="crime-card">
+        <a href="https://cyber.delhipolice.gov.in/Fakeshoppingsite.html">
+        <div class="crime-icon" style="background:#E8EAF6;">🛒</div>
+        <h3>Online Shopping Fraud</h3></a>
+        <p>Fake e-commerce sites, non-delivery of goods, counterfeit products</p>
+      </div>
+      <div class="crime-card">
+        <a href="https://www.youtube.com/watch?v=-j6XQufDjJ0">
+        <div class="crime-icon" style="background:#FFEBEE;">💰</div>
+        <h3>Investment / Trading Scam</h3></a>
+        <p>Fake trading apps, ponzi schemes, cryptocurrency fraud</p>
+      </div>
+      <div class="crime-card">
+        <a href="https://youtu.be/cLoXQb5M6oI?si=iTdAXz1h-WsiKdpZ">
+        <div class="crime-icon" style="background:#E0F7FA;">📲</div>
+        <h3>Social Media Crime</h3></a>
+        <p>Profile hacking, fake accounts, defamation, morphed images</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       COMPLAINT FORM
+       ═══════════════════════════════════════ -->
+  <div class="form-section" id="report">
+    <div class="form-wrapper">
+
+      <!-- Left: Info -->
+      <div class="form-info">
+        <div class="section-label" style="color:var(--saffron)">Lodge Your Complaint</div>
+        <h2 style="color:var(--navy)">File a Cyber Crime Complaint Online</h2>
+        <p>Use this portal to report cyber crimes committed against you or someone you know. All complaints are handled confidentially and forwarded to the appropriate State/UT law enforcement agencies.</p>
+        <ul class="info-points">
+          <li>Report crimes related to women and children anonymously</li>
+          <li>Financial fraud complaints processed within 24 hours</li>
+          <li>Automatic case ID generated for tracking</li>
+          <li>Reports forwarded to respective state police</li>
+          <li>Zero cost — no fee charged to file a complaint</li>
+          <li>Evidence preservation guidance available</li>
+        </ul>
+        <div style="margin-top:24px; background:rgba(255,153,51,0.08); border:1px solid rgba(255,153,51,0.3); border-radius:8px; padding:16px;">
+          <p style="font-size:13px; color:#374151; font-weight:600; margin-bottom:6px;">⚠️ Important Advisory</p>
+          <p style="font-size:12.5px; color:#6b7280;">For financial fraud, call <strong style="color:#c62828;">1930</strong> immediately — real-time intervention can freeze fraudulent transactions before you complete this form.</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="complaint-form">
+        <div class="form-title">📋 Online Complaint Form</div>
+        <form onsubmit="submitComplaint(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name <span class="required">*</span></label>
+              <input type="text" placeholder="Enter first name" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name <span class="required">*</span></label>
+              <input type="text" placeholder="Enter last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Mobile Number <span class="required">*</span></label>
+              <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="your@email.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>State/UT <span class="required">*</span></label>
+              <select required>
+                <option value="">Select State</option>
+                <option>Andhra Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Delhi (NCT)</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Uttar Pradesh</option>
+                <option>West Bengal</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>District</label>
+              <input type="text" placeholder="Enter district">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Category of Crime <span class="required">*</span></label>
+            <select required>
+              <option value="">Select Crime Category</option>
+              <option>Financial Fraud (UPI/Card/NetBanking)</option>
+              <option>Online Job / Loan Fraud</option>
+              <option>Cyber Bullying / Harassment</option>
+              <option>Phishing / Vishing / Smishing</option>
+              <option>Investment / Trading Scam</option>
+              <option>Ransomware / Malware Attack</option>
+              <option>Hacking / Data Breach</option>
+              <option>Social Media Crime</option>
+              <option>Online Shopping Fraud</option>
+              <option>Sextortion / Blackmail</option>
+              <option>Child Sexual Abuse Material (CSAM)</option>
+              <option>Other Cyber Crime</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Date of Incident <span class="required">*</span></label>
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <label>Description of Incident <span class="required">*</span></label>
+            <textarea placeholder="Describe the incident in detail — include suspect phone numbers, URLs, transaction IDs, or any relevant information..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Upload Evidence (Screenshots, documents)</label>
+            <div class="file-upload" onclick="this.querySelector('input').click()">
+              <span style="font-size:28px;">📎</span>
+              <p>Click to upload files (JPG, PNG, PDF, MP4 — Max 5MB each)</p>
+              <input type="file" multiple accept=".jpg,.jpeg,.png,.pdf,.mp4" style="display:none">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Enter Captcha <span class="required">*</span></label>
+            <div class="captcha-box">
+              <div class="captcha-img">X7K2M9</div>
+              <input class="captcha-input" type="text" placeholder="Enter text shown" required>
+              <button type="button" style="background:none;border:none;cursor:pointer;font-size:18px;" onclick="refreshCaptcha()">🔄</button>
+            </div>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:10px; margin-bottom:18px;">
+            <input type="checkbox" id="consent" style="margin-top:3px; width:15px; height:15px; flex-shrink:0;" required>
+            <label for="consent" style="font-size:12px; color:#6b7280; font-weight:400; text-transform:none; letter-spacing:0; cursor:pointer;">
+              I declare that the information provided is true and correct to the best of my knowledge. I understand that filing a false complaint is punishable under the Indian Penal Code.
+            </label>
+          </div>
+          <button type="submit" class="submit-btn">🔒 Submit Complaint Securely</button>
+          <p class="form-note">Your complaint will be assigned a unique Case ID. All personal information is protected under IT Act, 2000.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       TRACK COMPLAINT
+       ═══════════════════════════════════════ -->
+  <div class="track-section" id="file">
+    <div class="track-inner">
+      <div style="font-size:40px; margin-bottom:14px;">🔍</div>
+      <h2>Track Your Complaint Status</h2>
+      <p>Enter your complaint ID or registered mobile number to check the status of your filed complaint.</p>
+      <div class="track-form">
+        <input type="text" placeholder="Enter Complaint ID (e.g. CY/2024/0012345)" maxlength="30">
+        <button class="track-btn" onclick="trackComplaint()">Track Now</button>
+      </div>
+      <p style="color:#4a5a7a; font-size:12px; margin-top:14px;">You can also track via SMS: Type STATUS &lt;CaseID&gt; and send to 14422</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       CYBER AWARENESS
+       ═══════════════════════════════════════ -->
+  <div class="awareness-section">
+    <div style="max-width:1200px; margin:0 auto; padding:0 20px;">
+      <div class="section-label" style="color:var(--saffron)">Stay Safe Online</div>
+      <h2 class="section-title">Cyber Safety Tips</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">🔐</div>
+          <h3>Protect Your OTP</h3>
+          <p>Never share OTP, PIN, or password with anyone — not even bank officials. Banks never ask for these details over calls.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔗</div>
+          <h3>Verify Before You Click</h3>
+          <p>Check URLs carefully before entering credentials. Fraudsters create near-identical fake websites to steal your data.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📱</div>
+          <h3>Secure Your Devices</h3>
+          <p>Keep software updated, use strong passwords, enable 2FA, and never install apps from unknown sources.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">💸</div>
+          <h3>Think Before You Transfer</h3>
+          <p>Pause before sending money online. If something feels rushed or too good to be true, it likely is a scam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HELPLINES
+       ═══════════════════════════════════════ -->
+  <div class="helpline-section" id="help">
+    <div style="max-width:1200px; margin:0 auto; padding:0 20px; text-align:center;">
+      <div class="section-label" style="color:var(--saffron)">Emergency Contacts</div>
+      <h2 style="font-family:'Rajdhani',sans-serif; font-size:28px; font-weight:700; color:white; margin-bottom:6px;">Important Helpline Numbers</h2>
+      <p style="color:#6b82b0; font-size:14px;">Contact these helplines for immediate assistance</p>
+    </div>
+    <div class="helpline-grid">
+      <div class="helpline-card">
+        <div class="icon">💰</div>
+        <h3>Cyber Financial Fraud</h3>
+        <div class="helpline-number">1930</div>
+        <p>24×7 National Helpline (I4C)</p>
+      </div>
+      <div class="helpline-card">
+        <div class="icon">👮</div>
+        <h3>Police Emergency</h3>
+        <div class="helpline-number">112</div>
+        <p>All India Emergency Services</p>
+      </div>
+      <div class="helpline-card">
+        <div class="icon">👩</div>
+        <h3>Women in Distress</h3>
+        <div class="helpline-number">1091</div>
+        <p>Women Helpline — 24×7</p>
+      </div>
+      <div class="helpline-card">
+        <div class="icon">🧒</div>
+        <h3>Child Helpline</h3>
+        <div class="helpline-number">1098</div>
+        <p>Childline India Foundation</p>
+      </div>
+      <div class="helpline-card">
+        <div class="icon">🏦</div>
+        <h3>RBI Banking Fraud</h3>
+        <div class="helpline-number">14440</div>
+        <p>Reserve Bank of India</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-about">
+        <div class="logo-row">
+          <div style="font-size:30px;">⚖️</div>
+          <h3>National Cyber Crime Reporting Portal</h3>
+        </div>
+        <p>An initiative of Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs, Government of India. This portal facilitates victims of cybercrime to file online complaints.</p>
+        <div class="ministry-logos">
+          <div class="ministry-badge"><a href="https://www.mha.gov.in" target="_blank"><span>MHA</span>Ministry of Home Affairs</a></div>
+          <div class="ministry-badge"><a href="https://www.i4c.mha.gov.in" target="_blank"><span>I4C</span>Cyber Crime Coord.</a></div>
+          <div class="ministry-badge"><a href="https://www.meity.gov.in" target="_blank"><span>MEITY</span>IT Ministry</a></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#report">File Complaint</a></li>
+          <li><a href="#file">Track Complaint</a></li>
+          <li><a href="#">Cyber Awareness</a></li>
+          <li><a href="#">Advisories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About I4C</a></li>
+          <li><a href="#">About the Portal</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Media Corner</a></li>
+          <li><a href="#">Annual Report</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help &amp; Support</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">User Manual</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Ministry of Home Affairs, Government of India. All Rights Reserved.</p>
+      <p>Last Updated: November 2024 | <a href="#">Disclaimer</a> | <a href="#">Accessibility</a> | <a href="#">Copyright Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       TOAST NOTIFICATION
+       ═══════════════════════════════════════ -->
+  <div class="toast" id="toast">
+    <strong>✅ Complaint Submitted!</strong>
+    Your complaint has been received. Case ID: <strong>CY/2024/00<span id="casenum">12847</span></strong><br>
+    <span style="font-size:12px; color:#a8c0f0;">You will receive an SMS confirmation shortly.</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       CYBER SAARTHI — AI CHATBOT
+       ═══════════════════════════════════════ -->
+
+  <!-- Floating chat button -->
+  <div class="chat-bubble-btn" id="chatBubbleBtn" onclick="toggleChat()">
+    <span class="chat-icon">🛡️</span>
+    <span class="close-icon">✕</span>
+    <div class="notif-dot" id="notifDot">1</div>
+  </div>
+
+  <!-- Chat window -->
+  <div class="chat-window" id="chatWindow">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-avatar">🤖</div>
+      <div class="chat-header-text">
+        <h3>Cyber Saarthi <span style="font-size:11px; background:rgba(255,153,51,0.2); padding:2px 7px; border-radius:10px; color:#FF9933;">AI</span></h3>
+        <p><span class="online-dot"></span>Online · Cyber Crime Expert Assistant</p>
+      </div>
+      <div class="chat-lang-toggle">
+        <button class="active" id="langEN" onclick="setLang('en')">EN</button>
+        <button id="langHI" onclick="setLang('hi')">HI</button>
+      </div>
+      <div class="chat-header-actions">
+        <button onclick="clearChat()" title="Clear Chat">🗑️</button>
+        <button onclick="toggleChat()" title="Close">✕</button>
+      </div>
+    </div>
+
+    <!-- Quick Topic Chips -->
+    <div class="quick-topics">
+      <p>Quick Topics</p>
+      <div class="quick-chips">
+        <div class="quick-chip" onclick="sendQuick('UPI / Banking Fraud')">💳 UPI Fraud</div>
+        <div class="quick-chip" onclick="sendQuick('Phishing scam')">🎣 Phishing</div>
+        <div class="quick-chip" onclick="sendQuick('Job scam')">💼 Job Scam</div>
+        <div class="quick-chip" onclick="sendQuick('How to report cybercrime?')">📋 How to Report</div>
+        <div class="quick-chip" onclick="sendQuick('OTP fraud')">📱 OTP Fraud</div>
+        <div class="quick-chip" onclick="sendQuick('Investment scam')">📈 Investment Scam</div>
+        <div class="quick-chip" onclick="sendQuick('Cyber helpline numbers India')">📞 Helplines</div>
+        <div class="quick-chip" onclick="sendQuick('Sextortion / blackmail help')">🔒 Sextortion</div>
+      </div>
+    </div>
+
+    <!-- Messages area -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Welcome message injected by script.js -->
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="chat-disclaimer">
+      ⚠️ This AI provides guidance only. For emergencies call <strong>1930</strong>. Not a substitute for official legal advice.
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-area">
+      <textarea
+        class="chat-input"
+        id="chatInput"
+        placeholder="Ask about cyber crime, fraud, safety tips..."
+        rows="1"
+        onkeydown="handleKey(event)"
+        oninput="autoResize(this)">
+      </textarea>
+      <button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
+    </div>
+
+  </div><!-- end .chat-window -->
+
+  <!-- Portal + Chatbot JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
